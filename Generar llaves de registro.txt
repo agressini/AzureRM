@@ -1,0 +1,5 @@
+.\GenConnectorConfig.ps1 -ConnectorUri https://tecpetrolrms.tecpetrol.techint.net -SetExchange2010
+.\GenConnectorConfig.ps1 -ConnectorUri https://tecpetrolrms.tecpetrol.techint.net -SetSharePoint2013
+
+https://tecpetrolrms.tecpetrol.techint.net/_wmcs/GetRmsoUri.aspx
+http://server/_wmcs/certification/servercertification.asmx
