@@ -1,0 +1,34 @@
+${Item.Label} agregará el nombre de la etiqueta o sub etiqueta. Por ejemplo: Muy Confidencial \ Red Tecpetrol.
+${Item.Name} agregará el nombre del documento o del campo Asunto de Outlook. Por ejemplo: Proyecto_X.docx
+${Item.Location} agregará la ruta donde se encuentra el documento cuando se etiqueta o el campo Asunto de Outlook. Por ejemplo: \\NETAPP\GESI\ Configuracion_SAP.docx
+${User.Name} agregará el nombre de ussuario de windows al momento de etiquetar. Por ejemplo: agressini.
+${User.PrincipalName} agregará el nombre del dueño del documento o correo electrónico conectado en Azure Information Protection (en formato UPN). Por ejemplo: agressini@algeiba.com
+${Event.DateTime} agregará la fecha cuando se aplique la protección. Por ejemplo: 03/04/2019 5:30 PM
+
+
+Muy Confidencial
+
+Muy Confidencial \ Red Tecpetrol
+${If.App.Word}
+Nombre del documento: ${item.name}
+Clasificación: ${item.label}
+Propietario: ${User.PrincipalName}
+${If.End}
+
+${If.App.XPO}
+Clasificación: ${item.label} - La reproducción y distribución debe ser reducida.
+${If.End}
+
+Muy Confidencial \ Global
+Muy Confidencial \ Red OT
+
+Confidencial
+Confidencial \ Red Tecpetrol
+Confidencial \ Global
+Confidencial \ Red OT
+
+Uso Interno
+Uso Interno \ Red Tecpetrol
+Uso Interno \ Global
+Uso Interno \ Personalizado...
+Público
