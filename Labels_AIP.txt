@@ -7,27 +7,34 @@ ${Event.DateTime} agregará la fecha cuando se aplique la protección. Por ejemp
 
 
 Muy Confidencial
+El contenido del presente correo fue clasificado como Muy Confidencial. Evitar el reenvío o distribución de la información. Aplicar las medidas de protección correspondientes según lo indicado en el Sitio de Protección de Información.
+Cuidar la información depende de nosotros!
 
 Muy Confidencial \ Red Tecpetrol
-${If.App.Word}
-Nombre del documento: ${item.name}
-Clasificación: ${item.label}
-Propietario: ${User.PrincipalName}
+${If.App.WXP}
+${item.label}
 ${If.End}
 
-${If.App.XPO}
-Clasificación: ${item.label} - La reproducción y distribución debe ser reducida.
+${If.App.Outlook}
+${item.label}: - El contenido del presente correo fue clasificado como Muy Confidencial. Evitar el reenvío o distribución de la información. Aplicar las medidas de protección correspondientes según lo indicado en el Sitio de Protección de Información.
+Cuidar la información depende de nosotros!
 ${If.End}
 
 Muy Confidencial \ Global
 Muy Confidencial \ Red OT ######
 
 Confidencial
+El contenido del presente correo fue clasificado como Confidencial. Sólo distribuir al personal debidamente 
+autorizado para el acceso y tratamiento de la información. Aplicar las medidas de protección correspondientes según lo indicado en el Sitio de Protección de Información.
+Cuidar la información depende de nosotros!
+
 Confidencial \ Red Tecpetrol
 Confidencial \ Global
 Confidencial \ Red OT
 
 Uso Interno
+El contenido del presente correo fue clasificado de Uso Interno. Por favor no distribuir fuera de la Compañía. 
+Cuidar la información depende de nosotros!
 Uso Interno \ Red Tecpetrol
 Uso Interno \ Global
 Uso Interno \ Personalizado...
