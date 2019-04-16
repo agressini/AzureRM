@@ -3,4 +3,4 @@
 
 https://tecpetrolrms.tecpetrol.techint.net/_wmcs/GetRmsoUri.aspx
 http://server/_wmcs/certification/servercertification.asmx
-http://server/_wmcs/certification/servercertification.asmx
+http://tecpetrolrms/_wmcs/certification/servercertification.asmx
